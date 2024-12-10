@@ -21,6 +21,6 @@ public class DirectorControllerTest {
         mockMvc.perform(get("/api/directors?threshold=4"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.directors").isArray())
-                .andExpect(jsonPath("$.directors[0]").value("Pedro Almodóvar"));
+                .andExpect(jsonPath("$.directors[0]").value("Martin Scorsese"));
     }
 }
